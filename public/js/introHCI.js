@@ -34,6 +34,8 @@ function addProjectDetails(e) {
 
 function callBack(data){
 	console.log(data)
+	var selector = '#project' + data['id'] + ' .details'
+	$(selector).html(data['title']+ '<br><br>' + data['date'] + '<br><br>' + data['summary'])
 
 
 }
